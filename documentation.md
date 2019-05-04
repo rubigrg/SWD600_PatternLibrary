@@ -14,7 +14,7 @@ Conclusion:
 Responsive Grid: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_grid_stacked_to_hor&stacked=h
 https://www.w3schools.com/w3css/w3css_responsive.asp
 Components:
-Navigation bar: https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp
+1. Navigation bar: https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp<br>
 Header Element (carousel or just static): https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
 A range of six button types: https://www.w3schools.com/howto/howto_css_alert_buttons.asp
 Jumbotron (call to action): https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp
