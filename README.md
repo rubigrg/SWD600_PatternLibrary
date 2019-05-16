@@ -15,5 +15,5 @@ Pattern Library is a responsive front-end framework and is also a collection of 
 <li>Pagination</li>
 
 <br>
-
+Please use chrome to visit the page.
 <a href="https://rubigrg.github.io/PatternLibrary_SWD600/">Download/View PatternLibrary</a>
