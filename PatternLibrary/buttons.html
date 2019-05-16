@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Buttons</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/dropdown.js"></script>
+  
+</head>
+
+    
+    
+<body>
+    
+    
+    <div class="sidebar"><br>
+        <img src="images/logo.png" style="width:227px;height:120px;margin-left:7%;"><br><br>
+        <br>
+        <a href="index.html" style="background-color:white;color:black;" >HOME</a>
+          <button onclick="myFunction()" class="dropbtn" id="dropdown" style="background-color: gray;
+    color: white;">COMPONENTS</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="header.html">Header Element</a>
+            <a href="buttons.html" class="active">Buttons</a>
+            <a href="footer.html">Footer</a>
+            <a href="grid.html">Responsive Grid</a>
+            <a href="jumbotron.html">Jumbotron</a>
+            <a href="navigation.html">Navigation</a>
+            <a href="pagination.html">Pagination</a>
+          </div>
+  
+    </div>
+    
+
+    <div class="contents">
+      <header>Buttons</header>
+        <div class="txts">It defines a clickable button and can put content such as text and images.</div><line>______________________________________________________________________________________________________________</line> 
+    <br>
+    <br>
+        
+    <div style="font-size:30px; color:orange;">
+        Examples:
+        </div>
+        
+    <h2>Default Button</h2>
+    <p>Below is a default button used in most websites.</p>
+        <button class="defaultbtn">Button</button>
+        <br>
+        <br>
+        <div style="border: 2px solid black;border-radius: 5px;">
+            <br>
+            <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="class">"defaultbtn"</span>&gt;<span class="textt">Button</span>&lt;/button&gt;</span>
+               <br> 
+               <br> 
+        </div>
+    <br><line>______________________________________________________________________________________________________________</line> 
+        
+    <h2>Button usage:</h2>
+    
+    <a class="anchor">Anchor</a>
+    <button class="bttn">Button</button>
+    <input type="submit" class="sub" value="Submit">
+    <input type="reset" class="res" value="Reset">
+        
+    <p>*Button tag <span class="headtag">&lt;button&gt;</span> can be used for four different elements;</p>
+    <li>Anchor tags <span class="headtag">&lt;a&gt;</span></li>
+        <br>
+    <li>Button Tags <span class="headtag">&lt;button&gt;</span></li>
+        <br>
+    <li>Submit <span class="headtag">&lt;input <span class="rel">type=</span><span class="class">"submit"</span>&gt;</span></li>
+        <br>
+    <li>Reset/Clear <span class="headtag">&lt;input <span class="rel">type=</span><span class="class">"reset"</span>&gt;</span> OR <span class="headtag">&lt;input <span class="rel">type=</span><span class="class">"clear"</span>&gt;</span></li>
+        <br>
+        <br>
+    
+    <div style="border:2px solid black; border-radius:5px;">
+        <br>
+        <span class="htmlcode">&lt;a <span class="rel">class=</span><span class="rel"><span class="class">"anchor"</span></span>&gt;<span class="textt">Anchor</span>&lt;/a&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"bttn"</span></span>&gt;<span class="textt">Button</span>&lt;/button&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;input <span class="rel">type=</span><span class="rel"><span class="class">"submit"</span> <span class="rel">class=</span><span class="class">"sub"</span></span> <span class="rel">value=</span><span class="class">"submit"</span>&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;input <span class="rel">type=</span><span class="rel"><span class="class">"reset"</span> <span class="rel">class=</span><span class="class">"res"</span></span> <span class="rel">value=</span><span class="class">"reset"</span>&gt;</span>
+        <br>
+        <br>
+    </div>
+        <line>______________________________________________________________________________________________________________</line> 
+        
+    <br>
+        
+        <h2>Button styles:</h2>
+        
+        <table>
+            <tr>
+                <th style="border: 2px solid black; width:25%;">
+                    <h2>Style 1: Filled Buttons</h2>
+                    
+                    <button class="success">Filled</button>
+                    <button class="info">Filled</button>
+                    <button class="warningg">Filled</button>
+                    <button class="error">Filled</button>
+                    <br>
+                    <br>
+                    
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"success"</span></span>&gt;<span class="textt">Filled</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"info"</span></span>&gt;<span class="textt">Filled</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"warningg"</span></span>&gt;<span class="textt">Filled</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"error"</span></span>&gt;<span class="textt">Filled</span>&lt;/button&gt;</span>
+                    
+                    <br>
+                    <br>
+                </th>
+                <th style="border: 2px solid black; width:25%;">
+                    <h2>Style 2: Outlined Buttons</h2>
+                    <button class="outline1">Outline</button>
+                    <button class="outline2">Outline</button>
+                    <button class="outline3">Outline</button>
+                    <button class="outline4">Outline</button>
+                    <br>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"outline1"</span></span>&gt;<span class="textt">Outline</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"outline2"</span></span>&gt;<span class="textt">Outline</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"outline3"</span></span>&gt;<span class="textt">Outline</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"outline4"</span></span>&gt;<span class="textt">Outline</span>&lt;/button&gt;</span>
+                    <br>
+                </th>
+            </tr>
+            
+            <tr>
+                <th style="border: 2px solid black; width:25%;">
+                    <h2>Style 3: Rounded Filled Buttons</h2>
+                    
+                    <button class="rounded-filled">Rounded</button>
+                    <button class="rounded-filled2">Rounded</button>
+                    <button class="rounded-filled3">Rounded</button>
+                    <button class="rounded-filled4">Rounded</button>
+                    <br>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-filled"</span></span>&gt;<span class="textt">Rounded</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-filled2"</span></span>&gt;<span class="textt">Rounded</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-filled3"</span></span>&gt;<span class="textt">Rounded</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-filled4"</span></span>&gt;<span class="textt">Rounded</span>&lt;/button&gt;</span>
+                    <br>
+                    <br>
+                </th>
+                <th style="border: 2px solid black; width:25%;">
+                    <h2>Style 4: Rounded Outlined Buttons</h2>
+                    <button class="rounded-outline">Rounded Outline</button>
+                    <button class="rounded-outline2">Rounded Outline</button>
+                    <br>
+                    <br>
+                    <button class="rounded-outline3">Rounded Outline</button>
+                    <button class="rounded-outline4">Rounded Outline</button>
+                    <br>
+                    <br>
+                    <div style="font-size: 13px;">
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-outline"</span></span>&gt;<span class="textt">Rounded Outline</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-outline2"</span></span>&gt;<span class="textt">Rounded Outline</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-outline3"</span></span>&gt;<span class="textt">Rounded Outline</span>&lt;/button&gt;</span>
+                    <br>
+                    <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"rounded-outline4"</span></span>&gt;<span class="textt">Rounded Outline</span>&lt;/button&gt;</span>
+                        <br>
+                        <br>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <br>
+        
+        <line>______________________________________________________________________________________________________________</line> 
+        
+        <h2 style="text-align: center;">Style 5: Full-Width Outlined Buttons</h2>
+        <br>
+        
+        <button class="full-green">Full Width Outlined</button>
+        <br><br>
+        <button class="full-blue">Full Width Outlined</button>
+        <br><br>
+        <button class="full-orange">Full Width Outlined</button>
+        <br><br>
+        <button class="full-red">Full Width Outlined</button>
+        <br>
+        <br>
+        
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-green"</span></span>&gt;<span class="textt">Full Width Outlined</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-blue"</span></span>&gt;<span class="textt">Full Width Outlined</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-orange"</span></span>&gt;<span class="textt">Full Width Outlined</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-red"</span></span>&gt;<span class="textt">Full Width Outlined</span>&lt;/button&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+     <line>______________________________________________________________________________________________________________</line> 
+        <br>
+        <br>
+        
+        <h2 style="text-align: center;">Style 6: Full-Width Filled Buttons</h2>
+        <button class="full-green-filled">Full Width Filled</button>
+        <br><br>
+        <button class="full-blue-filled">Full Width Filled</button>
+        <br><br>
+        <button class="full-orange-filled">Full Width Filled</button>
+        <br><br>
+        <button class="full-red-filled">Full Width Filled</button>
+        <br>
+        <br>
+        
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-green-filled"</span></span>&gt;<span class="textt">Full Width Filled</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-blue-filled"</span></span>&gt;<span class="textt">Full Width Filled</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-orange-filled"</span></span>&gt;<span class="textt">Full Width Filled</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"full-red-filled"</span></span>&gt;<span class="textt">Full Width Filled</span>&lt;/button&gt;</span>
+            <br>
+            <br>
+        </div>
+       <br> 
+       <br> 
+        <line>______________________________________________________________________________________________________________</line> 
+        <br>
+        <br>
+        
+        <h2>Style 7: Hoverable Buttons</h2>
+        <button class="hoverbtn">Green</button>
+        <button class="hoverbtn2">Blue</button>
+        <button class="hoverbtn3">Yellow</button>
+        <button class="hoverbtn4">Black</button>
+        <br>
+        <br>
+        
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtn"</span></span>&gt;<span class="textt">Green</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtn2"</span></span>&gt;<span class="textt">Blue</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtn3"</span></span>&gt;<span class="textt">Yellow</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtn4"</span></span>&gt;<span class="textt">Black</span>&lt;/button&gt;</span>
+            <br>
+            <br>
+        </div>
+        
+        <br>
+        <br>
+        
+        <button class="hoverbtt">Green</button>
+        <button class="hoverbtt2">Blue</button>
+        <button class="hoverbtt3">Yellow</button>
+        <button class="hoverbtt4">Black</button>
+        <br>
+        <br>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtt"</span></span>&gt;<span class="textt">Green</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtt2"</span></span>&gt;<span class="textt">Blue</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtt3"</span></span>&gt;<span class="textt">Yellow</span>&lt;/button&gt;</span>
+                    <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="rel"><span class="class">"hoverbtt4"</span></span>&gt;<span class="textt">Black</span>&lt;/button&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+        
+    </div>
+
+</body>
+
+
+
+
+</html>

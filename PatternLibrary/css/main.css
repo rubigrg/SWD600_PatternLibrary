@@ -1,0 +1,1091 @@
+body {
+    background-color: ;
+    font-family: sans-serif;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-right: 2px solid gray;
+}
+
+.sidebar a {
+  display: block;
+    font-weight: bold;
+  padding: 16px;
+  text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+    font-family: monospace;
+}
+ 
+.sidebar a.active {
+  background-color: grey;
+    opacity: 0.9;
+  color: white;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: white;
+    opacity: 0.7;
+  color: black;
+}
+
+div.contents {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+    width: 75%;
+    margin-left: 21.5%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a, img, dropdown, dropbtn {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
+/** Drop Down menu *//
+.dropbtn {
+  border: none;
+  cursor: pointer;
+}
+
+#dropdown {
+  display: block;
+    font-weight: bold;
+    height: 71px;
+    width: 255px;
+  text-decoration: none;
+    background-color: ;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+    background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+    border-bottom: 2px solid gray;
+    font-size: 20px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: gray;
+    color: white;
+}
+
+#dropdown:hover {
+    background-color: gray;
+    color: white;
+}
+
+.show {display: block;}
+
+
+/** Responsive Grids **/
+block{
+	background-color: $block-color;
+	display: block;
+	padding: 50px 0;
+	text-align: center;
+	margin-bottom: $gutter;
+}
+
+//the grid:
+
+.grid{
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.col-33{
+	width: 33.3%;
+	float: left;
+}
+.col-50{
+	width: 50%;
+	float: left;
+}
+
+.clear{
+	clear: both;
+	display: block;
+}
+
+@media all and (max-width:800px) {
+	.col-33{
+		width: 50%;
+	}
+}
+
+@media all and (max-width:600px) {
+	.col-50, .col-33{
+		width: 100%;
+		float: none;
+	}
+}
+
+/** Headings **/
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+i {
+    font-size: 20px;
+    margin-left: 30%;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+}
+
+h5 {
+    text-align: center;
+    color: green;
+}
+
+.fontawesome {
+    
+}
+
+.txts {
+    color: green;
+    font-size: 18px;
+}
+
+/** coding **/
+
+
+/** Header Element **/
+header {
+    font-size: 40px;
+    color: darkblue;
+}
+
+.or {
+    margin-left: 3%;
+}
+
+.tabhead {
+    background-color: lightblue;
+    width: 20%;
+    font-size: 18px;
+    border-left: 9px solid blue;
+}
+
+/** Span tags **/
+.htmlcode {
+    color: blue;
+    margin-left: 3%;
+}
+
+.rel, .href {
+    color: green;
+}
+
+.class, .link {
+    color: orange;
+}
+
+.textt {
+    color: black;
+}
+
+.comments {
+    color: darkgrey
+}
+
+.headtag {
+    background-color: lightcyan;
+    color: deepskyblue;
+}
+
+
+/** Header Tabs **/
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  opacity: 0.8;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Header1 {
+    background-color:yellow;
+}
+#Header2 {background-color:green;}
+#Header3 {background-color:blue;}
+#Header4 {background-color:orange;}
+
+.tabheader {
+    border: 1px solid black; 
+    padding: 5px 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.tabheader:hover {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.basicheader {
+    padding: 60px;
+  text-align: center;
+  background-color: lightblue;
+  color: white;
+  font-size: 30px;
+}
+
+.basicheaderr {
+    border: 2px solid black;
+}
+
+/** Carousel section **/
+.mySlides {display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+    margin-right: 20%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+    background-color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 80%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+    font-weight: bold;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+    margin-top: 4%;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.warning {
+    background-color: #f9e5e8;
+    border-left: 5px solid lightcoral;
+    padding: 5px 10px;
+}
+
+/** Header buttons **/
+.btn1 {
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+.hoverbtn, .hoverbtn2, .hoverbtn3, .hoverbtn4, .hoverbtt, .hoverbtt2, .hoverbtt3, .hoverbtt4 {
+    padding: 10px 10px;
+    width: 15%;
+    border-radius: 5px;
+}
+
+.hoverbtn {
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+}
+
+.hoverbtn:hover {
+    border: 2px solid forestgreen;
+    background-color: white;
+    color: Green;
+    cursor: pointer;
+}
+
+.hoverbtn2 {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+}
+
+.hoverbtn2:hover {
+    border: 2px solid blue;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.hoverbtn3 {
+    border: 2px solid yellow;
+    background-color: yellow;
+    color: blue;
+}
+
+.hoverbtn3:hover {
+    border: 2px solid yellow;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.hoverbtn4 {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+
+.hoverbtn4:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.hoverbtt {
+    border: 2px solid green;
+    color: green;
+}
+
+.hoverbtt:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.hoverbtt2 {
+    border: 2px solid blue;
+    color: blue;
+}
+
+.hoverbtt2:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.hoverbtt3 {
+    border: 2px solid yellow;
+    color: blue;
+}
+
+.hoverbtt3:hover {
+    background-color: yellow;
+    color: blue;
+    cursor: pointer;
+}
+
+.hoverbtt4 {
+    border: 2px solid black;
+    color: black;
+}
+
+.hoverbtt4:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.btn2 {
+    border: 2px solid black;
+    color: black;
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+.btn3 {
+    border: 2px solid green;
+    border-radius: 9px;
+    font-size: 14px;
+    color: green;
+}
+
+.btn1:hover {
+    background-color: blue;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn3:hover {
+    background-color: green;
+    color: white;
+}
+
+.btn1, .btn2, .btn3 {
+    padding: 5px 10px;
+}
+
+/** Buttons page **/
+.defaultbtn {
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.defaultbtn:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.anchor {
+    padding: 7px 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.anchor:hover {
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    width: 90px;
+}
+
+.sub, .res {
+    width: 80px;
+    height: 36px;
+}
+
+.bttn, .sub, .res {
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px 10px;    
+}
+
+.anchor:hover, .bttn:hover, .sub:hover, .res:hover {
+  border: 2px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.success {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.info {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.warningg {
+    background-color: darkorange;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.success:hover, .info:hover, .warningg:hover, .error:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.outline1 {
+    border: 2px solid green;
+    color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.outline1:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.outline2 {
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.outline2:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+
+.outline3 {
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.outline3:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+
+.outline4 {
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.outline4:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.rounded-filled {
+    background-color: green;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-filled2 {
+    background-color: blue;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-filled3 {
+    background-color: orange;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-filled4 {
+    background-color: red;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-filled:hover, .rounded-filled2:hover, .rounded-filled3:hover, .rounded-filled4:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.rounded-outline {
+    border: 2px solid green;
+    color: green;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-outline:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.rounded-outline2 {
+    border: 2px solid blue;
+    color: blue;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-outline2:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.rounded-outline3 {
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-outline3:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.rounded-outline4 {
+    border: 2px solid red;
+    color: red;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.rounded-outline4:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.full-green {
+    border: 2px solid green;
+    width: 100%;
+    color: green;
+    padding: 10px 10px;
+}
+
+.full-green:hover {
+   background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.full-blue {
+    border: 2px solid blue;
+    width: 100%;
+    color: blue;
+    padding: 10px 10px;
+}
+
+.full-blue:hover {
+   background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.full-orange {
+    border: 2px solid orange;
+    width: 100%;
+    color: orange;
+    padding: 10px 10px;
+}
+
+.full-orange:hover {
+   background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.full-red {
+    border: 2px solid red;
+    width: 100%;
+    color: red;
+    padding: 10px 10px;
+}
+
+.full-red:hover {
+   background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.full-green-filled{
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.full-green-filled:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.full-blue-filled{
+    background-color: blue;
+    color: white;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.full-blue-filled:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.full-orange-filled{
+    background-color: orange;
+    color: white;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.full-orange-filled:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.full-red-filled{
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.full-red-filled:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/** Footer page **/
+.footer1 {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.footer1 > div {
+    flex: 1;
+}
+
+.des {
+    font-size: 12px;
+}
+
+.socialmed {
+    margin-left: 5%;
+}
+
+.one, .two {
+    border-right: 1px solid white;
+}
+
+.fixedfooter {
+    position: fixed;
+    left: 0;
+   bottom: 0;
+   width: 83%;
+    margin-left: 17.4%;
+   background-color: deepskyblue;;
+   color: black;
+   text-align: center;
+}
+
+.qlinks {
+    color: yellow;
+    color: yellow;
+    margin-left: 5%;
+    text-decoration: none;
+    line-height: 5px;
+}
+
+.qlinks:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+.note {
+    color: red;
+    font-weight: bold;
+}
+
+.colour {
+    color: green;
+    
+}
+
+/** Font Awesome **/
+.fontbox {
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.downloadpl {
+    border-radius: 5px;
+    padding: 8px 13px;
+    background-color: white;
+    color: grey;
+    border: 2px solid grey;
+}
+
+.downloadpl:hover {
+    color: white;
+    background-color: grey;
+}
+
+/** Social media icons **/
+.fa-facebook, .fa-twitter, .fa-youtube  {
+    font-size: 60px;
+    padding: 5px 25px;
+    text-decoration: none;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-twitter:hover {
+    color: lightskyblue;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+/** Grid System **/
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    color: white;
+    flex: 1;
+    margin: 7px;
+    background-color:mediumseagreen;
+    height: 40px;
+}
+
+/** Jumbotron **/
+.jumbotron-container {
+    width: 70%;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+
+input {
+    height: 40px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.subscribenow {
+    border-radius: 8px;
+    border: 2px solid black;
+    color: black;
+}
+
+.subscribenow:hover {
+    border-radius: 8px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+/** navigation page **/
+li a{
+    list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: deepskyblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: darkblue;
+}
+
+.activee {
+  background-color: dodgerblue;
+}
+
+/** Vertical Nav **/
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: lightgoldenrodyellow;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: yellow;
+}
+
+.vertical-menu a.activee {
+  background-color: lightyellow;
+  color: black;
+}
+
+.column1 {
+    display: flex;
+    color: white;
+    flex: 1;
+    margin: 7px;
+    height: 269px;
+}
+
+.content {
+    background-color: lightyellow;
+    width: 310px;
+    color: black;
+}
+
+/** Pagination page **/
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: blue;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+font-size: 30px;
+}
+
+.pagination a.active {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: lightskyblue;
+    color: white;
+}

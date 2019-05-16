@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Navigation Bar</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/dropdown.js"></script>
+  
+</head>
+
+    
+    
+<body>
+    
+    
+    <div class="sidebar"><br>
+        <img src="images/logo.png" style="width:227px;height:120px;margin-left:7%;"><br><br>
+        <br>
+        <a href="index.html" style="background-color:white;color:black;" >HOME</a>
+          <button onclick="myFunction()" class="dropbtn" id="dropdown" style="background-color: gray;
+    color: white;">COMPONENTS</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="header.html">Header Element</a>
+            <a href="buttons.html">Buttons</a>
+            <a href="footer.html">Footer</a>
+            <a href="grid.html">Responsive Grid</a>
+            <a href="jumbotron.html">Jumbotron</a>
+            <a href="navigation.html" class="active">Navigation</a>
+            <a href="pagination.html">Pagination</a>
+          </div>
+  
+    </div>
+    
+
+    <div class="contents">
+      <header>Navigation Bar</header>
+        <div class="txts">It is the most important components part of a website as it allows you to access to pages with ease of use.</div>
+        
+        <line>______________________________________________________________________________________________________________</line> 
+        
+        <br>
+        <br>
+        
+        <div style="font-size:30px; color:orange;">
+        Introduction:
+        </div>
+        
+        <h2 style="font-size: 20px;">
+        Navigation Bar comes with different forms; for example, A Horizontal, Vertical or a Sidebar Navigation.
+        </h2>
+        
+        <line>______________________________________________________________________________________________________________</line> 
+        
+        <h2 style="font-size: 27px; color: blue; text-align: center;">Horizontal Navigation:</h2>
+        <p>This is a responsive full width horizontal navigation bar contanining a logo and page links. 
+        <br>
+        <strong>This nav bar has used <span class="headtag">&lt;ul&gt;</span></strong> tag instead of <span class="headtag">&lt;div class=""&gt;</span>.</p>
+        
+        <ul>
+          <li><a href="#">LOGO</a></li>
+          <li><a href="#" class="activee">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+          <li><a href="#">Page 4</a></li>
+        </ul>
+        
+        <br>
+        
+        <div style="font-size:30px; color:orange;">
+        Nav Bar Structure:
+        </div>
+        
+        <li>A <span class="headtag">&lt;ul&gt;</span> tag contains the navigation links.</li>
+        <br>
+        <li>A <span class="headtag">&lt;li&gt;</span> tags with <span class="headtag">&lt;a&gt;</span> tags inside contains navigation links.</li>
+        <br>
+        <li>A <span class="headtag">&lt;.active&gt;</span> class to <span class="headtag">&lt;li&gt;</span> link shows the current page opened/use.</li>
+        
+        <br>
+        <br>
+        <strong>NOTE!!</strong> The nav bar must be contained with the <span class="headtag">&lt;header&gt;</span> tag to ensure that it works the way it should.
+        <br>
+        <br>
+        <div style="border: 2px solid black; border-radius: 5px;">
+        <br>
+            <span class="htmlcode">&lt;ul&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Logo</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span><span class="rel"> class=</span><span class="class">"active"</span>&gt;<span class="textt">Page 1</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Page 2</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Page 3</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Page 4</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode">&lt;/ul&gt;</span>
+        <br>
+        <br>
+        </div>
+        
+       <br> <line>______________________________________________________________________________________________________________</line> 
+        
+        <br>
+        <br>
+        
+        <h2 style="font-size: 27px; color: blue; text-align: center;">Vertical Navigation:</h2>
+        
+        <div class="row">
+            <div class="column1" style="heigth: 80px;">
+            <div class="vertical-menu" style="background-color:lightgoldenrodyellow">
+              <a href="#" class="activee">Home</a>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+            </div>
+            <div class="content">
+              This is a vertical navigation bar. 
+                
+            </div>    
+                
+            </div>
+            <div class="column1" style="width: 50px;">
+                <div style="border: 2px solid black; border-radius: 5px; width:100%;">
+        <br>
+            <span class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"vertical-menu"</span>&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span><span class="rel"> class=</span><span class="class">"active"</span>&gt;<span class="textt">Home</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Link 1</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Link 2</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Link 3</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;li&gt;&lt;a <span class="rel">href=</span><span class="class">"#"</span>&gt;<span class="textt">Link 4</span>&lt;/a&gt;&lt;/li&gt;</span>
+            <br>
+            <span class="htmlcode">&lt;/div&gt;</span>
+            <br>
+            <br>
+            <span class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"vertical-menu"</span>&gt;</span>
+                    <br>
+                    <span class="textt" style="margin-left: 12%;">This is a vertical navigation bar.</span>
+                    <br>
+            <span class="htmlcode">&lt;/div&gt;</span>
+        <br>
+        <br>
+        </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+
+
+
+</html>

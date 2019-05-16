@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+        <title>Responsive Grid System</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/dropdown.js"></script>
+  
+</head>
+
+    
+    
+<body>
+    
+    
+    <div class="sidebar"><br>
+        <img src="images/logo.png" style="width:227px;height:120px;margin-left:7%;"><br><br>
+        <br>
+        <a href="index.html" style="background-color:white;color:black;" >HOME</a>
+          <button onclick="myFunction()" class="dropbtn" id="dropdown" style="background-color: gray;
+    color: white;">COMPONENTS</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="header.html">Header Element</a>
+            <a href="buttons.html">Buttons</a>
+            <a href="footer.html">Footer</a>
+            <a href="grid.html" class="active">Responsive Grid</a>
+            <a href="jumbotron.html">Jumbotron</a>
+            <a href="navigation.html">Navigation</a>
+            <a href="pagination.html">Pagination</a>
+          </div>
+  
+    </div>
+    
+
+    <div class="contents">
+      <header>Responsive Grid System</header>
+        <div class="txts">Flexbox is used for the responsive grid system. It is divided into columns, which makes it eaiser to place elements on the page. Flexbox grid has 12 columns and you can have up to 12 columns in one row. </div>
+        <line>______________________________________________________________________________________________________________</line> 
+        
+        <br>
+        <br>
+        
+        <div style="font-size:30px; color:orange;">
+        Structure:
+        </div>
+        
+        <h2 style="font-size: 25px;">Grid Container:</h2>
+        <p>Using <span class="headtag">.container</span> will provide a good structure to your website. It is used for body content and is also used to center your content. </p>
+        
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;body&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;div <span class="rel">class=</span><span class="class">"container"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 12%; color:gray;">&lt;!-- Section Goes here --!&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;/div&gt;</span>
+            <br>
+        <span class="htmlcode">&lt;/body&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+        
+        <h2 style="font-size: 25px;">Grid Section:</h2>
+        <p>The section class will go inside the grid container. It uses <span class="headtag">.section</span> to allow you to add padding to a div.</p>
+        
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;body&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;div <span class="rel">class=</span><span class="class">"container"</span>&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 12%;">&lt;div <span class="rel">class=</span><span class="class">"section"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 16%; color:gray;">&lt;!-- Page Content here --!&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 12%;">&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;/div&gt;</span>
+            <br>
+        <span class="htmlcode">&lt;/body&gt;</span>
+            <br>
+            <br>
+        </div>
+        
+        <br>
+        
+        <h2 style="font-size: 25px;">Grid Row:</h2>
+        <p>Rows are used to contain all the columns. </p>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+        <span class="htmlcode">&lt;body&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;div <span class="rel">class=</span><span class="class">"container"</span>&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 12%;">&lt;div <span class="rel">class=</span><span class="class">"section"</span>&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 17%;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 22%; color:gray;">&lt;!-- Columns here --!&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 17%;">&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 12%;">&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;/div&gt;</span>
+            <br>
+        <span class="htmlcode">&lt;/body&gt;</span>
+            <br>
+            <br>
+        </div>
+        
+        <line>______________________________________________________________________________________________________________</line> 
+        <br>
+        
+        <div style="font-size:30px; color:orange;">
+        Columns:
+        </div>
+        <p>Column class is contained inside a row and provides padding between each column. To add columns, just add <span class="headtag">.column</span> class to a div inside a row.</p>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" >&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;div <span class="rel">class=</span><span class="class">"coloum"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 10%; color:gray;">&lt;!-- Content here --!&gt;</span>
+            <br>
+            <span class="htmlcode"style="margin-left: 7%;" >&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" >&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+	   
+        <h2 style="font-size: 25px;">Multiple Columns:</h2>
+        <p>More divs can be used for columns and can be added into a row as long as they are divisble by 12. 
+        <br>
+        <br>
+        <strong>NOTE!!</strong> Use <span class="headtag">.display: flex;</span> for both row and column to make it responsive.
+        <br>
+        <br>
+        Grid System allows up to 12 columns across the page;
+        </p> 
+        <li>One Column</li>
+        <br>
+        <li>Two Column</li>
+        <br>
+        <li>Three Column</li>
+        <br>
+        <li>Four Column</li>
+        <br>
+        <li>Five Column</li>
+        <br>
+        <li>Six Column</li>
+        <br>
+        <li>Twelve Column</li>
+        <br>
+        
+        <div class="row">
+                <div class="column"></div>
+            </div>
+
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        
+            <div class="row">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
+            <div class="row">
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+               <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        
+        <br>
+        
+        <h2 style="font-size: 25px;">One Column:</h2>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        
+        <h2 style="font-size: 25px;">Two Columns:</h2>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+        
+        <h2 style="font-size: 25px;">Three Columns:</h2>
+         <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+             <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+             <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+        <h2 style="font-size: 25px;">Four Columns:</h2>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+             <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+             <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        
+        <h2 style="font-size: 25px;">Five Columns:</h2>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+             <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+             <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        <br>
+        <h2 style="font-size: 25px;">Six Columns:</h2>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+             <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+             <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+        
+        <br>
+        <h2 style="font-size: 25px;">Twelve Columns:</h2>
+        <div style="border: 2px solid black; border-radius: 5px;">
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;div <span class="rel">class=</span><span class="class">"row"</span>&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+             <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+             <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+             <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+             <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span style="margin-left: 7%;" class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"column"</span>&gt;&lt;/div&gt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: %;">&lt;/div&gt;</span>
+            <br>
+            <br>
+        </div>
+    </div>
+ 
+</body>
+
+
+
+
+</html>

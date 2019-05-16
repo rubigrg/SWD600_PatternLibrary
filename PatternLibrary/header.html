@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Header Element</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/dropdown.js"></script>
+    <script src="js/bottomtabs.js"></script>
+    <script src="js/slideshow.js"></script>
+  
+</head>
+
+    
+    
+<body>
+    
+    
+    <div class="sidebar"><br>
+        <img src="images/logo.png" style="width:227px;height:120px;margin-left:7%;"><br><br>
+        <br>
+        <a href="index.html" style="background-color:white;color:black;" >HOME</a>
+          <button onclick="myFunction()" class="dropbtn" id="dropdown" style="background-color:gray;
+    color: white;">COMPONENTS</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="header.html" class="active">Header Element</a>
+            <a href="buttons.html">Buttons</a>
+            <a href="footer.html">Footer</a>
+            <a href="grid.html">Responsive Grid</a>
+            <a href="jumbotron.html">Jumbotron</a>
+            <a href="navigation.html">Navigation</a>
+            <a href="pagination.html">Pagination</a>
+          </div>
+  
+    </div>
+    
+
+    <div class="contents">
+        <br>
+      <header>Header Element</header>
+        <div class="txts">It defines a header of a page or a section. It is used to include information related to the title and heading of the related content.</div>
+    <line>______________________________________________________________________________________________________________</line>   
+        <br>
+        <br>
+        
+        <div style="font-size: 15px;">
+        A header element comes after the navigation bar and is usually the full width of the page. However, you can place the header element before the navigation bar if you would like to or depending on your website context. It will resize automatically on all devices. 
+        <br>
+        <br>
+        </div>
+        
+        <div style="font-size:30px; color:orange;">
+        Examples:
+        </div>
+        
+        
+        <div class="basicheader">
+        <h1>This is a basic Header</h1>
+            <p>This header requires HTML and CSS only.</p>
+        </div>
+        <br>
+        
+        <div style="border: 2px solid grey; border-radius: 5px;">
+        <p style="font-size: 19px; margin-left: 3%;">Basic Colored Header HTML code:</p>
+        <span class="htmlcode">&lt;div <span class="rel">class=</span><span class="class">"basicheader"</span>&gt;</span>
+            <br>
+            <br>
+        <span class="htmlcode">&lt;h1&gt;<span class="textt">This is a basic Header</span>&lt;/h1&gt;</span>
+            <br>
+        <span class="htmlcode">&lt;p&gt;<span class="textt">Blue Colored basic header.</span>&lt;/p&gt;</span>
+        <br>
+        <br>
+        <span class="htmlcode">&lt;/div&gt;</span>
+            <br>
+            <br>
+            
+        <div class="or">
+            OR    
+            <br>
+            <br>
+            
+            If you would like to use an image, use the code shown below;
+            <br>
+            <br>
+        </div>
+            
+            <span class="htmlcode">&lt;header&gt;</span>
+            <br>
+            <span style="color:gray; margin-left: 7%;">&lt;!-- You don't have to add CLASS for img.</span>
+            <br>
+            <span style="color: gray; margin-left: 7%;">&lt;!-- You can add CSS styling on here using <span class="headtag">&lt;style="width:100%;"&gt;</span> instead of CLASS.--!&gt;&lt;</span>
+            <br>
+            <span class="htmlcode" style="margin-left: 7%;">&lt;img <span class="rel">class=</span><span class="class">"img_header"</span> <span class="rel">src=</span><span class="class">"images/headerimg.jpg"</span>&gt;</span>
+            <br>
+            <span class="htmlcode">&lt;/header&gt;</span>
+            
+        </div>
+         <line>______________________________________________________________________________________________________________</line> 
+        
+        
+        <br><br>
+    
+    <h2 style="text-align:center;"> Tab Header (Require JavaScript) </h2> 
+    <div class="tabhead"> Click on each header.</div>
+        <br>
+    <div id="Header1" class="tabcontent">
+      <h3>Tab Header 1</h3>
+    </div>
+
+    <div id="Header2" class="tabcontent">
+      <h3>Tab Header 2</h3> 
+    </div>
+
+    <div id="Header3" class="tabcontent">
+      <h3>Tab Header 3</h3>
+    </div>
+
+    <div id="Header4" class="tabcontent">
+      <h3>Tab Header 4</h3>
+    </div>
+        
+    <button class="tablink" onclick="openCity('Header1', this, 'yellow')" id="defaultOpen" style="color: black; background-color:yellow">Header 1</button>
+    <button class="tablink" onclick="openCity('Header2', this, 'green')" style="color: white; background-color:green">Header 2</button>
+    <button class="tablink" onclick="openCity('Header3', this, 'blue')" style="color: white; background-color:blue">Header 3 </button>
+    <button class="tablink" onclick="openCity('Header4', this, 'orange')" style="color: white; background-color:orange">Header 4</button>
+        
+       <br>
+       <br>
+       <br>
+        
+    <div style="border: 2px solid grey; border-radius: 5px;">
+        <p style="font-size: 19px; margin-left: 3%;">Tab Header HTML code:</p>
+        <span class="htmlcode">&lt;div <span class="rel">id=</span><span class="class">"header1"</span> <span class="rel">class=</span><span class="class">"tabcontent"</span>&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;h3&gt;<span class="textt">Header 1</span>&lt;/h3&gt;</span><br>
+        <span class="htmlcode">&lt;/div&gt;</span>
+        <br>
+        <br>
+        <span class="htmlcode">&lt;div <span class="rel">id=</span><span class="class">"header2"</span> <span class="rel">class=</span><span class="class">"tabcontent"</span>&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;h3&gt;<span class="textt">Header 2</span>&lt;/h3&gt;</span><br>
+        <span class="htmlcode">&lt;/div&gt;</span>
+        <br>
+        <br>
+        <span class="htmlcode">&lt;div <span class="rel">id=</span><span class="class">"header3"</span> <span class="rel">class=</span><span class="class">"tabcontent"</span>&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;h3&gt;<span class="textt">Header 3</span>&lt;/h3&gt;</span><br>
+        <span class="htmlcode">&lt;/div&gt;</span>
+        <br>
+        <br>
+        <span class="htmlcode">&lt;div <span class="rel">id=</span><span class="class">"header4"</span> <span class="rel">class=</span><span class="class">"tabcontent"</span>&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;h3&gt;<span class="textt">Header 4</span>&lt;/h3&gt;</span><br>
+        <span class="htmlcode">&lt;/div&gt;</span>
+        <br>
+        <br>
+        
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="class">"tablink"</span> <span class="rel">onclick=</span><span class="class">"openTab(Header1, this, 'yellow')" <span class="rel">id=<span class="class">"defaultOpen"</span></span></span>&gt;<span class="textt">Header 1</span>&lt;/button&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="class">"tablink"</span> <span class="rel">onclick=</span><span class="class">"openTab(Header2, this, 'green')" <span class="rel">id=<span class="class">"defaultOpen"</span></span></span>&gt;<span class="textt">Header 2</span>&lt;/button&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="class">"tablink"</span> <span class="rel">onclick=</span><span class="class">"openTab(Header3, this, 'blue')" <span class="rel">id=<span class="class">"defaultOpen"</span></span></span>&gt;<span class="textt">Header 3</span>&lt;/button&gt;</span>
+        <br>
+        <span class="htmlcode">&lt;button <span class="rel">class=</span><span class="class">"tablink"</span> <span class="rel">onclick=</span><span class="class">"openTab(Header4, this, 'orange')" <span class="rel">id=<span class="class">"defaultOpen"</span></span></span>&gt;<span class="textt">Header 4</span>&lt;/button&gt;</span>
+        <br>
+        <br>
+        </div>
+            <br>
+            <br>    
+    </div>
+    
+    
+    
+    
+</body>
+
+
+
+
+</html>
